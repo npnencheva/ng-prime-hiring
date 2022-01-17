@@ -1,0 +1,57 @@
+<div>
+  <div class="d-flex justify-content-center title">
+    <h1>Hire Developers</h1>
+  </div>
+  <div [formGroup]="hiredDeveloperForm">
+    <div class="d-flex justify-content-around">
+      <div>
+        <mat-form-field appearance="legacy">
+          <mat-label>Choose Date Range</mat-label>
+
+          <mat-date-range-input
+            [rangePicker]="picker"
+            [formGroup]="hiredDeveloperForm"
+            [min]="minDate"
+          >
+            <input
+              matStartDate
+              formControlName="start"
+              placeholder="Start Date"
+            />
+            <input matEndDate formControlName="end" placeholder="End Date" />
+          </mat-date-range-input>
+
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+      </div>
+      <div>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          (click)="onFormSubmit()"
+          [disabled]="hiredDeveloperForm.invalid"
+        >
+          Hire Team
+        </button>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center flex-wrap">
+      <div
+        *ngFor="let currentDeveloper of developers; let index = index"
+        class="hired-developer-card col-3 m-2 p-1"
+      >
+        <app-hired-developer-card
+          formGroupName="developerIdForm"
+          [developer]="currentDeveloper"
+        >
+        </app-hired-developer-card>
+      </div>
+    </div>
+  </div>
+</div>

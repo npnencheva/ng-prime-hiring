@@ -1,0 +1,279 @@
+<div>
+  <div class="d-flex justify-content-center title">
+    <h1>Add Developer</h1>
+  </div>
+  <div class="m-2 p-3 border border-primary rounded">
+    <form [formGroup]="developerForm" (ngSubmit)="onFormSubmit()">
+      <div class="">
+        <div class="form-group">
+          <label>Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            formControlName="name"
+          />
+
+          <div
+            class="error"
+            *ngIf="name?.invalid && (name?.dirty || name?.touched)"
+          >
+            <span class="text-danger" *ngIf="name?.errors?.['required']">
+              This field is required
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            formControlName="email"
+          />
+
+          <div
+            class="error"
+            *ngIf="email?.invalid && (email?.dirty || email?.touched)"
+          >
+            <span class="text-danger" *ngIf="email?.errors?.['required']">
+              This field is required
+            </span>
+            <span class="text-danger" *ngIf="email?.errors?.['email']">
+              This is not a valid email
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Phone number</label>
+          <input
+            type="text"
+            class="form-control"
+            name="phoneNumber"
+            formControlName="phoneNumber"
+          />
+
+          <div
+            class="error"
+            *ngIf="
+              phoneNumber?.invalid &&
+              (phoneNumber?.dirty || phoneNumber?.touched)
+            "
+          >
+            <span class="text-danger" *ngIf="phoneNumber?.errors?.['required']">
+              This field is required
+            </span>
+            <span class="text-danger" *ngIf="phoneNumber?.errors?.['pattern']">
+              This is not a valid number
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Location</label>
+          <input
+            type="text"
+            class="form-control"
+            name="location"
+            formControlName="location"
+          />
+
+          <div
+            class="error"
+            *ngIf="location?.invalid && (location?.dirty || location?.touched)"
+          >
+            <span class="text-danger" *ngIf="location?.errors?.['required']">
+              This field is required
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Profile picture</label>
+          <input
+            type="text"
+            class="form-control"
+            name="profilePicture"
+            formControlName="profilePicture"
+          />
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Price per hour</label>
+          <input
+            type="number"
+            min="0"
+            class="form-control"
+            name="pricePerHour"
+            formControlName="pricePerHour"
+          />
+
+          <div
+            class="error"
+            *ngIf="
+              pricePerHour?.invalid &&
+              (pricePerHour?.dirty || pricePerHour?.touched)
+            "
+          >
+            <span
+              class="text-danger"
+              *ngIf="pricePerHour?.errors?.['required']"
+            >
+              This field is required
+            </span>
+            <span class="text-danger" *ngIf="pricePerHour?.errors?.['min']">
+              The value cannot be negative
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Technology</label>
+
+          <select
+            class="form-select"
+            aria-label="Technology"
+            name="technology"
+            formControlName="technology"
+          >
+            <option
+              *ngFor="let technology of technologies"
+              [value]="technology"
+            >
+              {{ technology }}
+            </option>
+          </select>
+
+          <div
+            class="error"
+            *ngIf="
+              technology?.invalid && (technology?.dirty || technology?.touched)
+            "
+          >
+            <span class="text-danger" *ngIf="technology?.errors?.['required']">
+              This field is required
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Description</label>
+          <input
+            type="text"
+            class="form-control"
+            name="description"
+            formControlName="description"
+          />
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Years of experience</label>
+          <input
+            type="number"
+            min="0"
+            class="form-control"
+            name="yearsOfExperience"
+            formControlName="yearsOfExperience"
+          />
+
+          <div
+            class="error"
+            *ngIf="
+              yearsOfExperience?.invalid &&
+              (yearsOfExperience?.dirty || yearsOfExperience?.touched)
+            "
+          >
+            <span
+              class="text-danger"
+              *ngIf="yearsOfExperience?.errors?.['required']"
+            >
+              This field is required
+            </span>
+            <span
+              class="text-danger"
+              *ngIf="yearsOfExperience?.errors?.['min']"
+            >
+              The value cannot be negative
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Native language</label>
+          <select
+            class="form-select"
+            aria-label="Technology"
+            name="nativeLanguage"
+            formControlName="nativeLanguage"
+          >
+            <option
+              *ngFor="let nativeLanguage of nativeLanguages"
+              [value]="nativeLanguage"
+            >
+              {{ nativeLanguage }}
+            </option>
+          </select>
+
+          <div
+            class="error"
+            *ngIf="
+              nativeLanguage?.invalid &&
+              (nativeLanguage?.dirty || nativeLanguage?.touched)
+            "
+          >
+            <span
+              class="text-danger"
+              *ngIf="nativeLanguage?.errors?.['required']"
+            >
+              This field is required
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-group">
+          <label>Linkedin profile link</label>
+          <input
+            type="text"
+            class="form-control"
+            name="linkedinProfileLink"
+            formControlName="linkedinProfileLink"
+          />
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end p-3 m-3">
+        <div class="text-right">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="!isFormValid"
+          >
+            Save developer
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

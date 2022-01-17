@@ -1,0 +1,28 @@
+<div class="developers-holder mt-3">
+  <div class="d-flex justify-content-center title">
+    <h1>Developers</h1>
+  </div>
+  <form [formGroup]="selectedDevelopersForm">
+    <button
+      type="button"
+      class="col-3 btn btn-primary"
+      [disabled]="selectedDevelopersForm.invalid"
+      (click)="onSubmit()"
+    >
+      Hire
+    </button>
+    <div class="d-flex justify-content-center flex-wrap">
+      <div
+        class="developer-card col-5 m-2 p-2 gy-5"
+        *ngFor="let currentDeveloper of developers; let index = index"
+      >
+        <app-developer-card
+          [developer]="currentDeveloper"
+          (onDelete)="onDeveloperDeleted($event)"
+          (onChange)="onDeveloperChecked($event)"
+          (onHire)="onDeveloperHired($event)"
+        ></app-developer-card>
+      </div>
+    </div>
+  </form>
+</div>

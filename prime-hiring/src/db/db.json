@@ -1,0 +1,176 @@
+{
+  "developers": [
+    {
+      "id": 1,
+      "name": "Andy Smith",
+      "email": "andy.smith@mail.com",
+      "phoneNumber": "123456789",
+      "location": "Plovdiv, Bulgaria",
+      "profilePicture": "https://media.istockphoto.com/photos/businessman-in-suit-looking-at-camera-making-conference-video-call-picture-id1129638598?k=20&m=1129638598&s=612x612&w=0&h=WVzHj8znCDxxuJlZ2p0Gfd8xTFSmMC_MPXlxGmc_t4k=",
+      "pricePerHour": 35,
+      "technology": "Java",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "yearsOfExperience": 7,
+      "nativeLanguage": "English",
+      "linkedinProfileLink": "www.linkedin.com/in."
+    },
+    {
+      "id": 2,
+      "name": "Maria Totova",
+      "email": "m.totova@mail.com",
+      "phoneNumber": "15656582",
+      "location": "Sofia",
+      "profilePicture": "https://media.istockphoto.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?k=20&m=1132314350&s=612x612&w=0&h=3C1tcSHt3pa1TnjEFDMWQKR_k6kvmYPmyYGHVt8lXfk=",
+      "pricePerHour": 12,
+      "technology": "PHP",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "yearsOfExperience": 3,
+      "nativeLanguage": "Serbian",
+      "linkedinProfileLink": "www.linkedin.com/in."
+    },
+    {
+      "id": 3,
+      "name": "Petar Pashev",
+      "email": "p.pashev@mail.com",
+      "phoneNumber": "9856412375",
+      "location": "Sofia",
+      "profilePicture": "https://media.istockphoto.com/photos/headshot-of-a-young-adult-picture-id1132792394?k=20&m=1132792394&s=612x612&w=0&h=q-ikZuTSdSVehcxaVFaU5q7APZsEYsRdQeRqKfERTiE=",
+      "pricePerHour": 7,
+      "technology": "Flutter",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      "yearsOfExperience": 3,
+      "nativeLanguage": "Bulgarian",
+      "linkedinProfileLink": "www.linkedin.com/in."
+    },
+    {
+      "id": 4,
+      "name": "Tanya Tatinkova",
+      "email": "tanya789@mail.com",
+      "phoneNumber": "987654321",
+      "location": "Sofia",
+      "profilePicture": "https://media.istockphoto.com/photos/studio-waist-up-portrait-of-a-beautiful-businesswoman-with-crossed-picture-id1180926773?k=20&m=1180926773&s=612x612&w=0&h=GDpHprMlxwBoiBGgVAIDEQNfpMyHhy3-pu6pOw8H650=",
+      "pricePerHour": 50,
+      "technology": "Flutter",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      "yearsOfExperience": 5,
+      "nativeLanguage": "Serbian",
+      "linkedinProfileLink": "www.linkedin.com/in."
+    },
+    {
+      "id": 5,
+      "name": "Sarah Joy",
+      "email": "s.joy@mail.com",
+      "phoneNumber": "15656582",
+      "location": "",
+      "profilePicture": "https://media.istockphoto.com/photos/headshot-portrait-of-happy-mixed-race-african-girl-wearing-glasses-picture-id1144287292?k=20&m=1144287292&s=612x612&w=0&h=gaoqkiL6LFzghQfAQ9q8SbLUqtMIpzJNaKCegS3Wjmw=",
+      "pricePerHour": 23,
+      "technology": "Python",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "yearsOfExperience": 4,
+      "nativeLanguage": "English",
+      "linkedinProfileLink": "www.linkedin.com/in."
+    },
+    {
+      "id": 6,
+      "name": "William Depp",
+      "email": "depp@mail.com",
+      "phoneNumber": "15656582",
+      "location": "Belgrade, Serbia",
+      "profilePicture": "https://media.istockphoto.com/photos/smiling-black-man-in-suit-posing-on-studio-background-picture-id1201144328?k=20&m=1201144328&s=612x612&w=0&h=U2DJlDOnhJNvQziVvorKPIlqygqqpNL1s_rxqlLUhDo=",
+      "pricePerHour": 35,
+      "technology": "Javascript",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      "yearsOfExperience": 6,
+      "nativeLanguage": "English",
+      "linkedinProfileLink": "www.linkedin.com/in."
+    },
+    {
+      "id": 7,
+      "name": "Maria Minikova",
+      "email": "mimi351@mail.com",
+      "phoneNumber": "15656582",
+      "location": "Sofia",
+      "profilePicture": "https://media.istockphoto.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?k=20&m=1132314350&s=612x612&w=0&h=3C1tcSHt3pa1TnjEFDMWQKR_k6kvmYPmyYGHVt8lXfk=",
+      "pricePerHour": 24,
+      "technology": "Javascript",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "yearsOfExperience": 5,
+      "nativeLanguage": "Bulgarian",
+      "linkedinProfileLink": "www.linkedin.com/in."
+    }
+  ],
+  "hiredDevelopers": [
+    {
+      "id": 1,
+      "developerId": "7",
+      "start": "2022-03-01T22:00:00.000Z",
+      "end": "2022-03-30T22:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "developerId": "6",
+      "start": "2022-03-01T22:00:00.000Z",
+      "end": "2022-03-30T22:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "developerId": "1",
+      "start": "2021-10-31T22:00:00.000Z",
+      "end": "2021-12-30T22:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "developerId": "2",
+      "start": "2021-10-31T22:00:00.000Z",
+      "end": "2021-12-30T22:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "developerId": "3",
+      "start": "2021-09-30T21:00:00.000Z",
+      "end": "2021-12-30T22:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "developerId": "4",
+      "start": "2021-09-30T21:00:00.000Z",
+      "end": "2021-12-30T22:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "developerId": "5",
+      "start": "2022-01-31T22:00:00.000Z",
+      "end": "2022-05-30T21:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "developerId": "7",
+      "start": "2022-01-31T22:00:00.000Z",
+      "end": "2022-05-30T21:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "developerId": "4",
+      "start": "2022-01-31T22:00:00.000Z",
+      "end": "2022-05-30T21:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "developerId": "3",
+      "start": "2022-01-31T22:00:00.000Z",
+      "end": "2022-05-30T21:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "developerId": "1",
+      "start": "2021-08-31T21:00:00.000Z",
+      "end": "2021-09-29T21:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "developerId": "1",
+      "start": "2022-01-17T22:00:00.000Z",
+      "end": "2022-01-25T22:00:00.000Z"
+    }
+  ]
+}

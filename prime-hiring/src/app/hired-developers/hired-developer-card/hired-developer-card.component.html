@@ -1,0 +1,44 @@
+<div
+  class="developer-card d-flex flex-column border border-2 border-primary rounded p-2"
+>
+  <form [formGroup]="formCard">
+    <div class="row item-container pl-1">
+      <div class="name d-flex justify-content-between">
+        <h3 class="name">{{ developer.name }}</h3>
+        <input
+          type="checkbox"
+          class="checkbox"
+          [value]="developer.id"
+          (change)="onCheckboxChange($event)"
+        />
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="developer-image-container">
+            <img
+              class="developer-img img-fluid img-responsive thumbnail rounded"
+              [src]="developer.profilePicture"
+              alt="developer picture"
+            />
+          </div>
+        </div>
+        <div class="row col developer-info-container">
+          <div class="pricePerHour m-1">
+            <i class="fas fa-coins"></i>
+            <span>{{ developer.pricePerHour }}</span>
+            <span> $ per hour</span>
+          </div>
+          <div class="technology m-1">
+            <i class="fas fa-code"></i>
+            <span>{{ developer.technology }}</span>
+          </div>
+          <div class="yearsOfExperience m-1">
+            <i class="fas fa-calendar-alt"></i>
+            <span>{{ developer.yearsOfExperience }}</span>
+            <span> years experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

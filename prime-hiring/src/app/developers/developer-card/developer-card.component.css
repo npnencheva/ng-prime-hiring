@@ -1,0 +1,19 @@
+.fas {
+  margin-right: 3%;
+}
+
+.item-container {
+  color: #0d6efd;
+}
+
+.developer-info-container {
+  font-weight: bold;
+}
+
+.checkbox {
+  width: 1.4em;
+  height: 1.4em;
+}
+.name {
+  font-weight: bold;
+}
