@@ -1,8 +1,8 @@
 # ng-prime-hiring
 
-Angular project
+# Angular project
 
-Setup guide:
+# Setup guide:
 
 # Open terminal from the root project folder prime-hiring and run command: npm install
 It will install the dependencies to the local node_modules folder.
